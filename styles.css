@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    background: linear-gradient(135deg, #7059c5, #d6dddc); /* Gradient background */
+}
+
+.countdown-container {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2.5rem;
+}
+
+.countdown-item {
+    background: linear-gradient(135deg, #1358c0, #745cac); /* Gradient background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}added
+
+.countdown-item:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.countdown-number {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(224, 217, 217, 0.5);
+}
+
+.countdown-label {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.event-title {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #130e0e;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Animation for countdown */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.countdown-item {
+    animation: pulse 1.5s infinite;
+}
+
